@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string-array name="list">
+        <item>개인 게시판</item>
+        <item>학과 게시판</item>
+        <item>자유 게시판</item>
+    </string-array>
+</resources>
