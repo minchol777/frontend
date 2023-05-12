@@ -38,7 +38,33 @@
         </activity>
         <activity
             android:name=".RegisterActivity1"
-            android:label="게시판등록">
+            android:label="개인게시판등록">
+        </activity>
+
+        <activity
+            android:name=".ActivityList2"
+            android:label="학과게시판">
+        </activity>
+        <activity
+            android:name=".DetailActivity2"
+            android:label="글확인">
+        </activity>
+        <activity
+            android:name=".RegisterActivity2"
+            android:label="학과게시판등록">
+        </activity>
+
+        <activity
+            android:name=".ActivityList3"
+            android:label="자유게시판">
+        </activity>
+        <activity
+            android:name=".DetailActivity3"
+            android:label="글확인">
+        </activity>
+        <activity
+            android:name=".RegisterActivity3"
+            android:label="자유게시판등록">
         </activity>
     </application>
 

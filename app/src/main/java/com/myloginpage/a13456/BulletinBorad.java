@@ -20,13 +20,23 @@ public class BulletinBorad extends AppCompatActivity {
     }
 
     public void listplay(View view) {
-        int id = view.getId();
+            String tag = view.getTag().toString();
 
-        LinearLayout linearLayout = findViewById(id);
-        String tag = (String) linearLayout.getTag();
+            // 선택한 게시판에 따라 화면 전환 로직을 구현합니다.
+            if (tag.equals("01")) {
+                // 개인 게시판으로 화면 전환
+                Intent intent = new Intent(getApplicationContext(), ActivityList.class);
+                startActivity(intent);
+            } else if (tag.equals("02")) {
+                // 자유 게시판으로 화면 전환
+                Intent intent = new Intent(getApplicationContext(), ActivityList3.class);
+                startActivity(intent);
+            } else if (tag.equals("03")) {
+                // 학과 게시판으로 화면 전환
+                Intent intent = new Intent(getApplicationContext(), ActivityList2.class);
+                startActivity(intent);
+            }
+        }
 
-        Intent it = new Intent(getApplicationContext(),ActivityList.class);
-        it.putExtra("it_tag",tag);
-        startActivity(it);
-    }
+
 }
