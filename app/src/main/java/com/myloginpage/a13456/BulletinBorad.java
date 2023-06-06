@@ -2,10 +2,8 @@ package com.myloginpage.a13456;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.view.View;
-import android.widget.LinearLayout;
-import android.widget.Spinner;
+
 
 
 import androidx.annotation.Nullable;

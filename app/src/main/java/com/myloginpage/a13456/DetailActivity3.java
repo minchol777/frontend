@@ -104,16 +104,9 @@ public class DetailActivity3 extends AppCompatActivity {
         JSONArray jsonArray = new JSONArray();
         try {
             JSONObject comment1 = new JSONObject();
-            comment1.put("userid", "user1");
-            comment1.put("content", "댓글 내용1");
-            comment1.put("crt_dt", "2023-05-12");
+            comment1.put("main", "#StringValue#");
+            comment1.put("id", 1);
             jsonArray.put(comment1);
-
-            JSONObject comment2 = new JSONObject();
-            comment2.put("userid", "user2");
-            comment2.put("content", "댓글 내용2");
-            comment2.put("crt_dt", "2023-05-13");
-            jsonArray.put(comment2);
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -121,50 +114,5 @@ public class DetailActivity3 extends AppCompatActivity {
         // 댓글 레이아웃 초기화
         comment_layout.removeAllViews();
 
-        // 댓글 데이터를 동적으로 추가합니다.
-//        for (int i = 0; i < jsonArray.length(); i++) {
-//            try {
-//                JSONObject comment = jsonArray.getJSONObject(i);
-//                String userid = comment.optString("userid");
-//                String content = comment.optString("content");
-//                String date = comment.optString("crt_dt");
-//
-//                // custom_comment 레이아웃을 inflate하여 사용합니다.
-//                //View customView = LayoutInflater.from(this).inflate(R.layout.custom_comment, null);
-//
-//                // 데이터를 custom_comment 뷰에 세팅합니다.
-////                TextView userid_tv = customView.findViewById(R.id.cmt_userid_tv);
-////                TextView content_tv = customView.findViewById(R.id.cmt_content_tv);
-////                TextView date_tv = customView.findViewById(R.id.cmt_date_tv);
-//
-//                userid_tv.setText(userid);
-//                content_tv.setText(content);
-//                date_tv.setText(date);
-//
-//                // 댓글 레이아웃에 custom_comment 뷰를 추가합니다.
-//                comment_layout.addView(customView);
-//            } catch (JSONException e) {
-//                e.printStackTrace();
-//            }
-//        }
-//    }
-
-//    private void registerComment(String userid, String comment, String board_seq) {
-//        // 댓글을 등록하는 작업을 수행합니다.
-//        // 실제 서버와의 통신이 필요한 경우 서버로 데이터를 전송하고 결과를 처리하는 로직을 추가합니다.
-//        // 여기서는 예시로 간단히 토스트 메시지를 출력하는 부분만 추가합니다.
-//
-//        // 댓글 등록 성공 시
-//        Toast.makeText(this, "댓글이 등록되었습니다.", Toast.LENGTH_SHORT).show();
-//
-//        // 댓글 입력창 초기화
-//        comment_et.setText("");
-//
-//        // 키보드 숨김 처리
-//        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-//        imm.hideSoftInputFromWindow(comment_et.getWindowToken(), 0);
-//
-//        // 댓글 불러오기
-//        loadComments(board_seq);
     }
 }
