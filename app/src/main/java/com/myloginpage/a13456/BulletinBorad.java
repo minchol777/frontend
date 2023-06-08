@@ -31,8 +31,8 @@ public class BulletinBorad extends AppCompatActivity {
                 startActivity(intent);
             } else if (tag.equals("03")) {
                 // 학과 게시판으로 화면 전환
-                Intent intent = new Intent(getApplicationContext(), ActivityList2.class);
-                startActivity(intent);
+               // Intent intent = new Intent(getApplicationContext(), ActivityList2.class);
+               // startActivity(intent);
             }
         }
 

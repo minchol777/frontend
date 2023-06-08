@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -42,10 +43,6 @@
         </activity>
 
         <activity
-            android:name=".ActivityList2"
-            android:label="학과게시판">
-        </activity>
-        <activity
             android:name=".DetailActivity2"
             android:label="글확인">
         </activity>
@@ -67,5 +64,6 @@
             android:label="자유게시판등록">
         </activity>
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
